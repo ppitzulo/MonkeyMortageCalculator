@@ -25,7 +25,7 @@ function App() {
     }
 //ffe135
     if (monkeyPayment >= 500) {
-      return ( <><p className="center-text">Monkey Mortgage Payment: ${monkeyPayment} </p>
+      return ( <><p className="">Monkey Mortgage Payment: ${monkeyPayment} </p>
             <p className="bananas center-text">That's bananas!</p> </> );
     }
     else {
