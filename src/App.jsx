@@ -36,7 +36,7 @@ function App() {
   computeMortgageCost();
   return (
     <div className="calculator">
-      <img className="icon" src="/monkeymortgage.avif" alt="Rich monkey" />
+      <img className="icon" src="monkeymortgage.avif" alt="Rich monkey" />
       <h3 className="title">Monkey Mortgage Calculator</h3>
       <InputField title="Loan Amount" onChange={setLoanAmount} />
       <div className="container">
