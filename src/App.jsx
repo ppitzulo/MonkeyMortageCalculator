@@ -11,25 +11,25 @@ function App() {
     const principal = parseFloat(loanAmount);
     const term = parseFloat(loanTerm);
     const rate = parseFloat(interestRate) / 100;
-    const monthlyInterest = rate / 12;
+    const monkeyInterest = rate / 12;
     const numPayments = term * 12;
 
     // Calculate monthly mortgage payment
-    const monthlyPayment = Math.round(
-      (principal * monthlyInterest) /
-        (1 - Math.pow(1 + monthlyInterest, -numPayments))
+    const monkeyPayment = Math.round(
+      (principal * monkeyInterest) /
+        (1 - Math.pow(1 + monkeyInterest, -numPayments))
     );
 
-    if (isNaN(monthlyPayment)) {
-      return <p>Monthly Mortgage Payment: $0</p>
+    if (isNaN(monkeyPayment)) {
+      return <p>Monkey Mortgage Payment: $0</p>
     }
 //ffe135
-    if (monthlyPayment >= 500) {
-      return ( <><p>Monthly Mortgage Payment: ${monthlyPayment} </p>
+    if (monkeyPayment >= 500) {
+      return ( <><p>Monkey Mortgage Payment: ${monkeyPayment} </p>
             <p className="bananas">That's bananas!</p> </> );
     }
     else {
-      return <p>Monthly Mortgage Payment: $ {monthlyPayment} </p>
+      return <p>Monkey Mortgage Payment: $ {monkeyPayment} </p>
     }
   };
 
