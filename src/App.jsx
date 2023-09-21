@@ -21,23 +21,23 @@ function App() {
     );
 
     if (isNaN(monkeyPayment)) {
-      return <p>Monkey Mortgage Payment: $0</p>
+      return <p className="center-text">Monkey Mortgage Payment: $0</p>
     }
 //ffe135
     if (monkeyPayment >= 500) {
-      return ( <><p>Monkey Mortgage Payment: ${monkeyPayment} </p>
-            <p className="bananas">That's bananas!</p> </> );
+      return ( <><p className="center-text">Monkey Mortgage Payment: ${monkeyPayment} </p>
+            <p className="bananas center-text">That's bananas!</p> </> );
     }
     else {
-      return <p>Monkey Mortgage Payment: $ {monkeyPayment} </p>
+      return <p className="center-text">Monkey Mortgage Payment: ${monkeyPayment} </p>
     }
   };
 
   computeMortgageCost();
   return (
     <div className="calculator">
-      <img className="icon" src="monkeymortgage.avif" alt="Rich monkey" />
-      <h3 className="title">Monkey Mortgage Calculator</h3>
+      <img className="icon" src="./monkeymortgage.avif" alt="Rich monkey" />
+      <h3 className="title center-text">Monkey Mortgage Calculator</h3>
       <InputField title="Loan Amount" onChange={setLoanAmount} />
       <div className="container">
         <InputField title="Loan Term" onChange={setLoanTerm} />

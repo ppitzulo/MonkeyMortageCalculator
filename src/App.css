@@ -1,9 +1,15 @@
 .container {
   display: flex;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  /* justify-content: center; */
+  /* margin: 1rem 0;   */
+}
+
+.center-text {
+  text-align: center;
 }
 
 .icon {
@@ -14,13 +20,14 @@
 
 .bananas {
   color: #ffe135;
-  text-align: center;
   font-size: x-large;
   font-weight: bolder;
 }
+
 .title {
   margin-bottom: 1rem;
 }
+
 #root {
   display: flex;
   height: 100vh;
@@ -29,18 +36,14 @@
   font-family: 'Happy Monkey', cursive;
 }
 .calculator {
-  max-width: 600px;
+  max-width: 38rem;
   margin:
   auto;
   align-items: center;
-  /* justify-content: center; */
   display: flex;
   flex-direction: column;
   color: white;
   background-color: black;
   border-radius: 5px;
   padding: 5rem;
-
-
-  /* align-items: flex-start; */
 }
